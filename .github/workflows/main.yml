@@ -27,5 +27,3 @@ jobs:
         tags: ${{env.IMAGE_NAME}} 
         platforms: linux/amd64
         push: true
-        tags: |
-          primsforce-artifacts/node:latest
