@@ -24,6 +24,6 @@ jobs:
       uses: docker/build-push-action@v5
       with:
         context: 18/
-        tags: ${{ env.IMAGE_NAME }} 
+        tags: ghcr.io/prism-artifacts/node:18
         platforms: linux/amd64
         push: true
