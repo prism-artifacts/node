@@ -1,4 +1,4 @@
-name: Docker Image with Node:18.18.1
+name: Docker Image with Node:19.x.x
 
 on:
   push:
