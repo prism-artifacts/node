@@ -1,5 +1,5 @@
 FROM node:18.14.0
-LABEL org.opencontainers.image.source="https://github.com/prismforce-artifacts/node"
+LABEL org.opencontainers.image.source="https://github.com/prism-artifacts/node"
 RUN apt-get update && apt-get install -y libarchive13 \
   libuv1 cmake curl git python3 gcc g++
 
