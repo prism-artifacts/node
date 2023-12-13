@@ -1,5 +1,5 @@
-FROM node:18.14.0
-LABEL org.opencontainers.image.source="https://github.com/prism-artifacts/node"
+FROM node:18.19.0
+
 RUN apt-get update && apt-get install -y libarchive13 \
   libuv1 cmake curl git python3 gcc g++
 
@@ -27,5 +27,5 @@ RUN git clone https://github.com/mongodb/libmongocrypt && \
 RUN apt-get update; apt-get install curl gpg -y; \
     mkdir -p /etc/apt/keyrings; \
     curl -fsSL https://deb.nodesource.com/gpgkey/nodesource-repo.gpg.key | gpg --dearmor -o /etc/apt/keyrings/nodesource.gpg; \
-    echo "deb [signed-by=/etc/apt/keyrings/nodesource.gpg] https://deb.nodesource.com/node_20.x nodistro main" | tee /etc/apt/sources.list.d/nodesource.list; \
+    echo "deb [signed-by=/etc/apt/keyrings/nodesource.gpg] https://deb.nodesource.com/node_18.x nodistro main" | tee /etc/apt/sources.list.d/nodesource.list; \
     apt-get update && apt-get install -y nodejs;
