@@ -26,6 +26,9 @@
   },
   "engineStrict": true,
   "dependencies": {
+    "@aws-sdk/client-s3": "^3.312.0",
+    "@aws-sdk/client-sqs": "^3.312.0",
+    "@aws-sdk/s3-request-presigner": "^3.312.0",
     "@aws-sdk/client-quicksight": "^3.294.0",
     "@google-cloud/vision": "^2.4.2",
     "acl": "^0.4.11",
